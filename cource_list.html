@@ -13,11 +13,22 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <style type="text/css">
-
     .video_content {
-    	margin: 30px;
+    	padding-top: 30px;
     }
-
+    .video-js:hover:after {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 94px;
+	    content: '教学视频';
+	    background-color: rgba(0,0,0,.5);
+	    color: #fff;
+	    font-size: 14px;
+	    text-align: center;
+	    padding-top: 28%;
+	}
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -35,104 +46,107 @@
         <li class="active">预选课程</li>
     </ol>
 
-    <div>
-        <label class=" control-label">已选理论课</label>
-        <label>训练类型</label>
-    </div>
 
- <h6>Inversed Dropdown + Disabled Options</h6>
-
-      <select data-toggle="select" name="inverse-dropdown-disabled" class="form-control select select-default mrs mbm">
-        <option value="0" disabled>My Profile</option>
-        <option value="1">My Friends</option>
-        <option value="2">Messages</option>
-        <option value="3" disabled>My Settings</option>
-        <option value="4">Logout</option>
-      </select>
-
-
-    <form class="form-inline">
-        <div class="form-group">
-            <label class=" control-label">训练类型</label>
-            <select class="form-control">
-                <option>全部</option>
-                <option>理论课</option>
-                <option>训练课</option>
-                <option>战术课</option>
-                <option>比赛</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label class="control-label">训练难度</label>
-            <select class="form-control">
-                <option>全部</option>
-                <option>入门课</option>
-                <option>初级</option>
-                <option>中级</option>
-                <option>高级</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label class="control-label">训练时长</label>
-            <select class="form-control">
-                <option>全部</option>
-                <option>15min</option>
-                <option>20min</option>
-                <option>25min</option>
-            </select>
-        </div>
-        <div class="form-group ">
-            <label class="control-label">训练强度</label>
-            <select class="form-control">
-                <option>全部</option>
-                <option>轻</option>
-                <option>中</option>
-                <option>高</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label class="control-label">年龄段</label>
-            <select class="form-control">
-                <option>全部</option>
-                <option>K8</option>
-                <option>K12</option>
-                <option>K16</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label class="control-label">趣味性</label>
-            <select class="form-control">
-                <option>全部</option>
-                <option>低</option>
-                <option>中</option>
-                <option>高</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label class="control-label">趣味性</label>
-            <button class="btn btn-embossed btn-primary" >进入排课</button>
-        </div>
-    </form>
+  <div class="row">
+              <div class="col-md-12">
+                  <nav class="navbar navbar-inverse" role="navigation">
+                      <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-01">
+                             <span class="sr-only">Toggle navigation</span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                          </button>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-collapse-01">
+                            <ul class="nav navbar-nav navbar-left">
+                              <li class="active"><a href="#">创建本校课程</a></li>
+                              <li class="dropdown">
+                                <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                  训练类型
+                                  <span class="caret"></span>
+                                </a>
+                                    <ul class="dropdown-menu">
+	                                  <li><a href="#fakelink">入门课</a></li>
+	                                  <li><a href="#fakelink">初级课</a></li>
+	                                  <li><a href="#fakelink">战术课</a></li>
+	                                  <li><a href="#fakelink">理论比赛课</a></li>
+                                    </ul> <!-- /Sub menu -->
+                              </li>
+                              <li class="dropdown">
+                                   <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                      训练难度
+                                      <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#fakelink">入门</a></li>
+                                      <li> <a href="#fakelink">初级</a></li>
+                                      <li><a href="#fakelink">中级</a></li>
+                                       <li><a href="#fakelink">高级</a></li>
+                                    </ul> <!-- /Sub menu -->
+                              </li>
+                              <li class="dropdown">
+                                   <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                      训练时长
+                                      <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#fakelink">15min</a></li>
+                                      <li> <a href="#fakelink">20min</a></li>
+                                      <li> <a href="#fakelink">30min</a></li>
+                                    </ul> <!-- /Sub menu -->
+                              </li>
 
 
-     <div class="col-sm-5 col-md-3">
-             <div class="thumbnail">
-                    <video class="video-js" preload="auto" poster="img/demo/example-image.jpg" data-setup="{}">
-                        <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
-                        <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
-                     </video>
-                    <div class="caption">
-                        <h6>教学视频</h6>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit</p>
-                        <p><button class="btn btn-default">选择</button></p>
-                    </div>
-                </div>
-        </div>
-                
-            
+  							<li class="dropdown">
+                                   <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                      训练强度
+                                      <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li>	<a href="#fakelink">轻</a></li>
+                                      <li>  <a href="#fakelink">中</a></li>
+                                      <li>  <a href="#fakelink">高</a></li>
+                                    </ul> <!-- /Sub menu -->
+                              </li>
 
-    	<div id ="video_content" class="video_content"></div>
+                              <li class="dropdown">
+                                   <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                      年龄段
+                                      <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li>	<a href="#fakelink">K8</a></li>
+                                      <li>  <a href="#fakelink">K12</a></li>
+                                      <li>  <a href="#fakelink">K16</a></li>
+                                    </ul> <!-- /Sub menu -->
+                              </li>
+
+                              <li class="dropdown">
+                                   <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                                      趣味性
+                                      <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li>	<a href="#fakelink">低</a></li>
+                                      <li>  <a href="#fakelink">中</a></li>
+                                      <li>  <a href="#fakelink">高</a></li>
+                                    </ul> <!-- /Sub menu -->
+                              </li>
+                              <li><a href="#fakelink">进入排课</a></li>
+                            </ul>
+                     </div><!--/.nav -->
+                     </nav>
+              </div>
+        </div>
+
+    	<div id ="video_content" class="video_content">
+        <div class="col-sm-4 col-md-3">
+		    <video class="video-js" preload="auto" poster="img/demo/example-image.jpg" data-setup="{}">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+			</video>
+        </div>
         <div class="col-sm-4 col-md-3">
 		    <video class="video-js" preload="auto" poster="img/demo/example-image.jpg" data-setup="{}">
 				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
@@ -157,23 +171,57 @@
 				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
 			</video>
         </div>
+        
+        <div class="col-sm-4 col-md-3">
+		    <video class="video-js" preload="auto" poster="img/demo/example-image.jpg" data-setup="{}">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+			</video>
+        </div>
   
-</div>
+      <div class="col-sm-4 col-md-3">
+		    <video class="video-js" preload="auto" poster="img/demo/example-image.jpg" data-setup="{}">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+			</video>
+        </div>
+  
+      <div class="col-sm-4 col-md-3">
+		    <video class="video-js" preload="auto" poster="img/demo/example-image.jpg" data-setup="{}">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
+				<source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+			</video>
+        </div>
 
-    <nav>
-        <ul class="pager">
-            <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
-            <li class="next"><a href="#">下一页<span aria-hidden="true">&rarr;</span></a></li>
-        </ul>
-    </nav>
-</div>
-
-  <script>
-      $(document).ready(function(){
-       
-
-
-      });
+		 <div>
+            <ul class="pagination pagination-minimal">
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li><a href="#fakelink">9</a></li>
+              <li><a href="#fakelink">10</a></li>
+              <li class="pagination-dropdown dropup">
+                <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fui-triangle-up"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#fakelink">10–20</a></li>
+                  <li><a href="#fakelink">20–30</a></li>
+                  <li><a href="#fakelink">40–50</a></li>
+                </ul>
+              </li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+          </div>
+  		</div>
+  	<script>
+ 
     </script>
     <!-- /.container -->
 
