@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>创建本校课程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <style type="text/css">
+    .video_content {
+    	padding-top: 30px;
+    }
+    #box{
+    border: 1px solid gray;
+    width: 100%;
+    }
+
+    #child_box{
+    height: 100%; 
+    width: 100%;
+    background: yellow;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   #inline{
+      width: 1px;
+      border: 1px solid gray;
+      height: auto;
+
+    }
+
+
+  .mokuai_left{ 
+    margin: 10px 0 0px 0px; 
+    height: auto;
+    width: 20%;
+    float: left;
+  }
+   .mokuai_right{ 
+    margin: 10px 0 0px 0px; 
+    height: auto;
+    width: 75%;
+    float: right;
+  }
+
+  .select_img{
+    padding: 4px;
+    width: 250px;
+    border-radius:10px;
+    float: left;
+
+  }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+       
+<div class="content">
+    <ol class="breadcrumb">
+        <li><a href="#">创建本校课程</a></li>
+        <li class="active">排选课程</li>
+    </ol>
+
+
+  <div class="row">
+      <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
+        <div class="navbar-header">
+          <button data-target="#bs-example-navbar-collapse-7" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">排课</a>
+        </div>
+        <div id="bs-example-navbar-collapse-7" class="collapse navbar-collapse"  style="float: right; align-items: flex-end;">
+             <button class="btn btn-default navbar-btn btn-sm" type="button">设置课程数</button>
+             <button class="btn btn-default navbar-btn btn-sm" type="button">重设课程数</button>
+             <button class="btn btn-default navbar-btn btn-sm" type="button">排课分析</button>
+             <button class="btn btn-default navbar-btn btn-sm" type="button">提交排课</button>
+        </div>
+      </nav>
+
+
+      <div id="box" >
+          <div id = "child_box">
+            <div class="mokuai_left">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+            </div>
+
+            <div  class="mokuai_right">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+                  <img class="select_img" src="img/demo/example-image.jpg">
+            <div>
+
+            <ul class="pagination pagination-minimal" style="vertical-align: bottom;">
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li><a href="#fakelink">9</a></li>
+              <li><a href="#fakelink">10</a></li>
+              <li class="pagination-dropdown dropup">
+                <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fui-triangle-up"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#fakelink">10–20</a></li>
+                  <li><a href="#fakelink">20–30</a></li>
+                  <li><a href="#fakelink">40–50</a></li>
+                </ul>
+              </li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+          </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  	<script>
+ 
+    </script>
+    <!-- /.container -->
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+
+  </body>
+</html>
